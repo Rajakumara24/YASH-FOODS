@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(golden-cutlery-with-textile-plate-dark-background-top-view_1220-6580.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: antiquewhite;
+  }
+  
+  .order-status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .status-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .status-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delivered {
+    background-color: #3fc380;
+  }
+  
+  .in-progress {
+    background-color: #f4ca64;
+  }
+  
+  .pending {
+    background-color: #ff6b6b;
+  }
+  
+  .status-text {
+    margin-top: 10px;
+    color:antiquewhite;
+  }
+  
+  .order-details {
+    margin-top: 50px;
+  }
+  
+  .detail-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .detail-box h2 {
+    margin-bottom: 10px;
+    color:black;
+  }
+  
+  .detail-box p {
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  

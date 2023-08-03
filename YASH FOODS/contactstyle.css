@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url(golden-cutlery-with-textile-plate-dark-background-top-view_1220-6580.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.partner {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666666;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .partners-container {
+        justify-content: center;
+    }
+}

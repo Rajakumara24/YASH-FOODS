@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next row */
+    justify-content: flex-start; /* Align items to the start of the flex container */
+    gap: 20px; /* Add a gap between food items */
+    animation: scrollImages 20s linear infinite; /* Apply the scrollImages animation to the container */
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0); /* Start the images at the left-most position */
+    }
+    100% {
+      transform: translateX(-100%); /* Translate the images by -100% (full width) to scroll horizontally */
+    }
+  }
+  
+  .food-item {
+    flex: 0 0 calc(33.33% - 20px); /* Each food item occupies 33.33% of the container width with a gap of 20px */
+    max-width: calc(33.33% - 20px); /* Adjust the maximum width of each food item as needed */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .food-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .food-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .food-details {
+    padding: 10px;
+  }
+  
+  .food-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .food-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .food-details button {
+    display: block;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .food-details button:hover {
+    background-color: #45a049;
+  }
+  .payment-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    margin: 3%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    float:right;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .payment-button {
+    padding: 10px 20px;
+    background-color: #12d258;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0;
+   
+  }
+  
